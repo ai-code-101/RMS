@@ -4,13 +4,13 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 const cron = require('node-cron');
 
-const authRoutes = require('./routes/auth');
-const apartmentRoutes = require('./routes/apartments');
-const unitRoutes = require('./routes/units');
-const paymentRoutes = require('./routes/payments');
-const tenantRoutes = require('./routes/tenants');
-const notificationRoutes = require('./routes/notifications');
-const { processRentReminders } = require('./utils/reminderService');
+const authRoutes = require('./src/routes/auth');
+const apartmentRoutes = require('./src/routes/apartments');
+const unitRoutes = require('./src/routes/units');
+const paymentRoutes = require('./src/routes/payments');
+const tenantRoutes = require('./src/routes/tenants');
+const notificationRoutes = require('./src/routes/notifications');
+const { processRentReminders } = require('./src/utils/reminderService');
 
 const app = express();
 
