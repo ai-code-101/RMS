@@ -78,7 +78,7 @@ router.post('/initiate', auth, requireRole('tenant'), async (req, res) => {
       reference,
     };
 
-    const stkResponse = await axios.post(`${MEGAPAY_URL}/c2b/stk`, stkBody, {
+    const stkResponse = await axios.post(`${MEGAPAY_URL}/initiatestk`, stkBody, {
       headers: { 'Content-Type': 'application/json' },
       timeout: 30000,
     });
